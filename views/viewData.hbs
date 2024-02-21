@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Template engine Report</h1>
+
+    <table border="1">
+
+        {{#each data}}
+        {{#unless this.fulltime }}
+        <tr>
+            <td>{{this.name}}</td>
+            <td>{{this.age}}</td>
+            <td>{{this.occupation}}</td>
+            <td>{{this.company}}</td>
+
+        </tr>
+        {{/unless}}
+        {{/each}}
+    </table>
+</body>
+
+</html>
